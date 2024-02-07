@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sol</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+<body>
+<a-scene>
+    <a-assets>
+        <img id="ground" src="imgs/wood.jpg">
+    </a-assets>
+    <!-- Textured plane parallel to ground. -->
+    <a-plane src="#ground" height="100" width="100" rotation="-90 0 0" repeat="50 50 "></a-plane>
+    <a-sky color="#8EBEDE"></a-sky>
+</a-scene>
+</body>
+</html>
