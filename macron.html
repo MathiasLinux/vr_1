@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Macron</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+<body>
+<a-scene inspector="" keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="">
+    <a-assets>
+        <img id="ground" src="imgs/wood.jpg">
+    </a-assets>
+    <a-asset-item id="macron" src="model/macron.glb"></a-asset-item>
+    <!-- Textured plane parallel to ground. -->
+    <a-plane src="#ground" height="100" width="100" rotation="-90 0 0" repeat="50 50 " material="" geometry=""></a-plane>
+    <a-sphere radius="1.25" position="0.6972 1.25 -5" color="#EF2D5E" material="" geometry="" scale=""></a-sphere>
+    <a-sphere radius="1.25" position="-1.59158 1.25 -5" color="#EF2D5E" material="" geometry=""></a-sphere>
+    <a-cylinder radius="0.319" height="1.25" position="-0.42978 4.71623 -4.22194" color="#FFC65D" material="" geometry="" scale="5 5 5"></a-cylinder>
+    <a-entity gltf-model="model/macron.glb" position="-0.23514 0 -1.99732"></a-entity>
+    <a-sky color="#8EBEDE" material="" geometry=""></a-sky>
+    <div class="a-loader-title" style="display: none;">Sol</div><div class="a-loader-title" style="display: none;">Sol</div><div class="a-loader-title" style="display: none;">Macron</div></a-scene>
+</body>
+</html>
