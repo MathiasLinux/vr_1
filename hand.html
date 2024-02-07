@@ -1,0 +1,31 @@
+<head>
+    <title>Most Basic Super-Hands Example</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/super-hands@^3.0.4/dist/super-hands.min.js"></script>
+</head>
+
+<body>
+<a-scene physics>
+    <a-assets></a-assets>
+    <a-entity>
+        <a-entity camera wasd-controls position="0 1 1"
+                  capture-mouse
+                  raycaster cursor="rayOrigin:mouse"
+                  body="type: static; shape: sphere; sphereRadius: 0.001"
+                  super-hands="colliderEvent: raycaster-intersection;
+                             colliderEventProperty: els;
+                             colliderEndEvent:raycaster-intersection-cleared;
+                             colliderEndEventProperty: clearedEls;">
+        </a-entity>
+        <a-entity sphere-collider="objects: a-box" super-hands hand-controls="hand: left"></a-entity>
+        <a-entity sphere-collider="objects: a-box" super-hands hand-controls="hand: right"></a-entity>
+        <!-- Add a box to grab and stretch -->
+<!--        <a-box hoverable grabbable stretchable draggable droppable color="red" position="0 0 -3">-->
+<!--        </a-box>-->
+        <a-entity fbx-model="src: model/macrondance.fbx" animation-mixer="" hoverable grabbable stretchable draggable droppable position="0 0 -3"></a-entity>
+    </a-entity>
+
+    <!-- hover & drag-drop won't have any obvious effect without some additional event handlers or components. See the examples page for more -->
+</a-scene>
+</body>
