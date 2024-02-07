@@ -18,10 +18,10 @@
 <!--    <a-entity sphere-collider="objects: a-box" super-hands hand-controls="hand: left"></a-entity>-->
 <!--    <a-entity sphere-collider="objects: a-box" super-hands hand-controls="hand: right"></a-entity>-->
 <!--  </a-entity>-->
-  <a-entity oculus-touch-controls="hand: left"></a-entity>
-  <a-entity oculus-touch-controls="hand: right"></a-entity>
+<!--  <a-entity oculus-touch-controls="hand: left"></a-entity>-->
+<!--  <a-entity oculus-touch-controls="hand: right"></a-entity>-->
   <a-entity id="cameraRig" cursor-teleport="cameraRig: #cameraRig; cameraHead: #head">
-    <a-entity id="head" position="0 1.52 0" camera look-controls="reverseMouseDrag: true">
+    <a-entity oculus-touch-controls="hand: left" id="head" position="0 1.52 0" camera look-controls="reverseMouseDrag: true">
     </a-entity>
   </a-entity>
   <!-- Textured plane parallel to ground. -->
