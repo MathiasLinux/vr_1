@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anim</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+<!--    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>-->
+    <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+</head>
+<body>
+<a-scene inspector="" keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="" cursor="rayOrigin: mouse">
+    <a-assets>
+        <a-asset-item id="radio" src="model/radio.glb"></a-asset-item>
+    </a-assets>
+    <a-camera position="0 1.6 2.66574" wasd-controls="" rotation="" look-controls="" aframe-injected="" data-aframe-inspector-original-camera="">
+        <a-cursor></a-cursor>
+    </a-camera>
+    <a-entity gltf-model="model/radio.glb" position="-0.48355 1.05864 0.08138" rotation="-0.2939273489021123 -99.77372452849129 -0.37929806037660496"
+    sound="src : url(./sound/short.mp3); on: click;" ></a-entity>
+    <div class="a-loader-title" style="display: none;">Anim</div>
+    <a-sky color="#8EBEDE" material="" geometry=""> </a-sky>
+</a-scene>
+</body>
+</html>
